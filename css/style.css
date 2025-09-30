@@ -570,26 +570,6 @@ section#home {
 }
 
 /* Responsive adjustments for phones */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .header-right {
-    float: none;
-  }
-
-  .intro {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 40px 0;
-  }
-}
-
-
 @media screen and (max-width: 600px) {
   /* Navbar */
   .navbar ul {
@@ -603,6 +583,10 @@ section#home {
   }
 
   /* Intro (Home section) */
+  #home {
+    padding-top: 80px; /* <- ADD THIS LINE */
+  }
+
   .intro {
     flex-direction: column;
     gap: 20px;
