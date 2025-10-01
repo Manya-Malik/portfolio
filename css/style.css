@@ -571,6 +571,15 @@ section#home {
 
 /* Responsive adjustments for phones */
 @media screen and (max-width: 600px) {
+  /* Bring the #home hero down below the fixed navbar */
+  section#home::before {
+    content: "";
+    display: block;
+    height: 60px;     /* match your navbar’s height */
+    margin-top: -60px;/* pull the section up by exactly that amount */
+    visibility: hidden;
+  }
+
   /* Navbar */
   .navbar ul {
     flex-direction: column;
@@ -584,7 +593,7 @@ section#home {
 
   /* Intro (Home section) */
   #home {
-    padding-top: 80px; 
+    padding-top: 80px; /* extra breathing room under navbar */
   }
 
   .intro {
